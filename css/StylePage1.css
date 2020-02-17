@@ -1,0 +1,177 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+p{
+    font-size: 1em;
+    color: black;
+}
+.container{
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+.div-main{
+    background-color: black ;
+    overflow: hidden;
+    border-style: groove;
+    border-radius: 0.5em;
+}
+.main-content{
+    margin-top: 2.5em;
+    padding: 0;
+}
+@media(min-width: 768px){
+    .main-content{
+        width: 80%;
+        float: left;
+        padding: 0 3.75em 0 0;
+    }
+    .side-bar{
+        width: 20%;
+        float: right;
+        padding: 2em;
+        margin-top: 1em;
+    }
+}
+.main-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 13px 90px 19px 20px ;
+    text-align: center;
+    font-size: 1.375em;
+    display: block;
+    float: left;
+    transition: background-color 0.3s ease-in-out;
+}
+.main-nav a:hover{
+    transition: all 0.09s linear;
+    transform: scale(0.9);
+    max-width: 100%;
+    border-style: solid;
+}
+@media(min-width:768px){
+    .main-nav a {
+        display: inline;
+    }
+}
+h2{
+    color: black;
+    margin-bottom: 1.25em;
+}
+.entry{
+    margin-bottom: 3.75em;
+}
+.entry:last-of-type{
+    margin-bottom: 0em;
+}
+.entry img{
+    display: block;
+}
+@media(min-width: 768px){
+    .entry img{
+        width: 18.75em;
+        float: left;
+        margin: 0 1.25em 0 0;
+    }
+}
+.entry p {
+    text-align: justify;
+}
+
+/*DIVI DE IMAGENES*/
+.divis img{
+    transition: all 0.5s linear;   
+      max-width: 100%;
+      border-style: solid;
+}
+.divis img:hover{
+    transform: scale(0.9);
+    border-radius: 30px;
+}
+/**/
+.side-bar ul{
+    list-style: none;
+    padding: 0em;
+    border: darkgrey;
+    border-style: solid;
+    border-radius: 1em;
+}
+.side-bar ul li{
+    padding: 0.625em;
+}
+.side-bar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-right: 1.25em;
+}
+.side-bar ul li:hover{
+    background-color: darkgrey;
+}
+.sidebar ul li:hover a {
+    color: black;
+  }
+  .side-bar .img-aside{
+      border-style: none;
+      width: 100%;
+      height: 100%;
+  }
+.footer-site{
+    background-color: darkgray;
+    margin-top: 1.25em;
+    padding-top: 1.25em;
+    text-align: center;
+}
+.footer-site h2{
+    color: black;
+    text-decoration: none;
+}
+.footer-site a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-right: 1.25em;
+}
+.footer-site a:last-of-type {
+    margin-right: 0;
+}
+.footer-site .img-footer{
+    height: 70%;
+    width: 70%;
+    margin: 0em;
+}
+@media(min-width: 768px){
+    .footer-site .acerca-de{
+        float: left;
+        width: 35%;
+        text-align: left;
+    }
+    .footer-site .footer-menu{
+        float: right;
+        width: 65%;
+        text-align: right;
+    }
+}
+.copyright{
+    background-color: darkgrey;
+    padding: 1.25em 0;
+}
+  
